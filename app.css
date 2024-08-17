@@ -168,11 +168,74 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
 }
+.pricing-features {
+  margin: 50px 0 25px;
+}
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px;
+  border-top: 1px solid #e1f1ff;
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
 h1 {
   padding: 0.2em;
   margin: 0.4em;
-  font-size: larger;
+  font-size: xx-large;
   text-decoration: underline;
   text-align: center;
   text-transform: bold;
+  line-height: 1.5;
+}
+.pricing-price {
+  color: #e1f1ff;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: all 200ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #1f6fb2;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  img {
+    width: 400px; /* Set your desired width */
+    height: 30%; /* Set your desired height */
+    object-fit: cover; /* This will crop the image to fit within the specified dimensions */
+    overflow: hidden; /* Ensures any overflow from the image is hidden */
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
